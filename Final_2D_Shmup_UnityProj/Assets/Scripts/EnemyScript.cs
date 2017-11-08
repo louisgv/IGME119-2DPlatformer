@@ -79,7 +79,6 @@ public class EnemyScript : MonoBehaviour {
 
         if (jump)
         {
-            Debug.Log("Enemy jumped");
             anim.SetTrigger("Jump");
             rb2d.AddForce(new Vector2(0f, jumpForce));
             jump = false;

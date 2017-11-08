@@ -35,7 +35,6 @@ public class SimplePlatformController : MonoBehaviour
 
 		if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         {
-			Debug.Log ("Player jumped");
             jump = true;
         }
 
@@ -45,7 +44,6 @@ public class SimplePlatformController : MonoBehaviour
 		shoot |= Input.GetKeyDown (KeyCode.Space);
 		// Careful: For Mac users, ctrl + arrow is a bad idea
 
-		Debug.Log (anim.GetBool("Shoot"));
 		if (shoot)
 		{
 			source.PlayOneShot(audio_Shot);

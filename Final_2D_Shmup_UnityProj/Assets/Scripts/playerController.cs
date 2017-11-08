@@ -33,7 +33,6 @@ public class playerController : MonoBehaviour
 	}
 
 	void endShoot() {
-		Debug.Log ("Shoot end");
 		animator.SetBool("Shoot", false);
 	}
 }
