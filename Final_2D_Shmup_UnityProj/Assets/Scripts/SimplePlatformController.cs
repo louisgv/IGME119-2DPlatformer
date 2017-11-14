@@ -36,6 +36,7 @@ public class SimplePlatformController : MonoBehaviour
 		if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         {
             jump = true;
+			anim.SetBool("Jump", true);
         }
 
 		// 5 - Shooting
@@ -104,7 +105,6 @@ public class SimplePlatformController : MonoBehaviour
 
         if (jump)
         {
-            //anim.SetTrigger("Jump");
             rb2d.AddForce(new Vector2(0f, jumpForce));
             jump = false;
         }

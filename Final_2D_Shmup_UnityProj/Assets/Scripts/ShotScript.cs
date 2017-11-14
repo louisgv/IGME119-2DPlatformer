@@ -17,10 +17,16 @@ public class ShotScript : MonoBehaviour {
 	/// Projectile damage player or enemies?
 	/// </summary>
 	public bool isEnemyShot = false;
+
+	/// <summary>
+	/// The life time of the bullet.
+	/// After this many seconds, the bullet will die naturally.
+	/// </summary>
+	public float lifeTime = .25f;
 	
 	void Start()
 	{
 		// 2 - Limited time to live to avoid any leak
-		Destroy(gameObject, .25f); // 20sec
+		Destroy(gameObject, lifeTime); // 20sec
 	}
 }

@@ -61,8 +61,10 @@ public class EnemyScript : MonoBehaviour {
 		if (player != null) {
 			if (player.position.x < gameObject.transform.position.x && leftGrounded) {
 				gameObject.transform.Translate (maxSpeed * Time.deltaTime * -1f, 0, 0);
+				anim.SetBool ("Moving", true);
 			} else if (player.position.x > gameObject.transform.position.x && rightGrounded) {
 				gameObject.transform.Translate (maxSpeed * Time.deltaTime, 0, 0);
+				anim.SetBool ("Moving", true);
 			}
 		}
     }
@@ -79,7 +81,7 @@ public class EnemyScript : MonoBehaviour {
 
         if (jump)
         {
-            anim.SetTrigger("Jump");
+            //anim.SetTrigger("Jump");
             rb2d.AddForce(new Vector2(0f, jumpForce));
             jump = false;
         }
@@ -94,8 +96,19 @@ public class EnemyScript : MonoBehaviour {
         transform.localScale = theScale;
     }
 
-	private void endLoop()
+	private void endShoot()
 	{
-		gameObject.GetComponent<Animator>().SetBool("Shoot",false);
+		anim.SetBool("Shoot",false);
 	}
+
+	private void endWalk()
+	{
+		anim.SetBool("Moving",false);
+	}
+
+	private void endInjury()
+	{
+		anim.SetBool("Injury",false);
+	}
+
 }

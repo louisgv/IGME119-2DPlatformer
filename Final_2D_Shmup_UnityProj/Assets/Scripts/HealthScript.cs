@@ -11,6 +11,11 @@ public class HealthScript : MonoBehaviour {
 	/// Enemy or player?
 	/// </summary>
 	public bool isEnemy = true;
+
+	/// <summary>
+	/// Animator of hit object.
+	/// </summary>
+	public Animator anim;
 	
 	/// <summary>
 	/// Inflicts damage and check if the object should be destroyed
@@ -19,6 +24,8 @@ public class HealthScript : MonoBehaviour {
 	public void Damage(int damageCount)
 	{
 		hp -= damageCount;
+		anim = gameObject.GetComponentInChildren<Animator> ();
+		anim.SetBool ("Injury", true);
 		
 		if (hp <= 0)
 		{

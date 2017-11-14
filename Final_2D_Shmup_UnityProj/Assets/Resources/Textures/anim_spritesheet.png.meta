@@ -1,62 +1,75 @@
 fileFormatVersion: 2
 guid: 1525108090b524e4fa4fa9a574765df4
-timeCreated: 1510164029
+timeCreated: 1510181698
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: anim_spritesheet_0
-    21300002: anim_spritesheet_1
-    21300004: anim_spritesheet_2
-    21300006: anim_spritesheet_3
-    21300008: anim_spritesheet_4
-    21300010: anim_spritesheet_5
-    21300012: anim_spritesheet_6
-    21300014: anim_spritesheet_7
-    21300016: anim_spritesheet_8
-    21300018: anim_spritesheet_9
-    21300020: anim_spritesheet_10
-    21300022: anim_spritesheet_11
-    21300024: anim_spritesheet_12
-    21300026: anim_spritesheet_13
-    21300028: anim_spritesheet_14
-    21300030: anim_spritesheet_15
-    21300032: anim_spritesheet_16
-    21300034: anim_spritesheet_17
-    21300036: anim_spritesheet_18
-    21300038: anim_spritesheet_19
-    21300040: anim_spritesheet_20
-    21300042: anim_spritesheet_21
-    21300044: anim_spritesheet_22
-    21300046: anim_spritesheet_23
-    21300048: anim_spritesheet_24
-    21300050: anim_spritesheet_25
-    21300052: anim_spritesheet_26
-    21300054: anim_spritesheet_27
-    21300056: anim_spritesheet_28
-    21300058: anim_spritesheet_29
-    21300060: anim_spritesheet_30
-    21300062: anim_spritesheet_31
-    21300064: anim_spritesheet_32
-    21300066: anim_spritesheet_33
-    21300068: anim_spritesheet_34
-    21300070: anim_spritesheet_35
-    21300072: anim_spritesheet_36
-    21300074: anim_spritesheet_37
-    21300076: anim_spritesheet_38
-    21300078: anim_spritesheet_39
-    21300080: anim_spritesheet_40
-    21300082: enemy_idle_1
-    21300084: anim_spritesheet_42
-    21300086: anim_spritesheet_43
-    21300088: anim_spritesheet_44
-    21300090: anim_spritesheet_45
-    21300092: anim_spritesheet_46
-    21300094: anim_spritesheet_47
-    21300096: anim_spritesheet_48
-    21300098: anim_spritesheet_49
-    21300100: anim_spritesheet_50
+    21300000: player_idle_1
+    21300002: player_idle_2
+    21300004: player_idle_3
+    21300006: player_idle_4
+    21300008: player_idle_5
+    21300010: player_idle_6
+    21300012: player_idle_7
+    21300014: player_idle_8
+    21300016: player_jump_1
+    21300018: player_jump_2
+    21300020: player_jump_3
+    21300022: player_jump_4
+    21300024: player_jump_5
+    21300026: player_jump_6
+    21300028: player_jump_7
+    21300030: player_jump_8
+    21300032: player_walk_1
+    21300034: player_walk_2
+    21300036: player_walk_3
+    21300038: player_walk_4
+    21300040: player_walk_5
+    21300042: player_walk_6
+    21300044: player_walk_7
+    21300046: player_walk_8
+    21300048: player_attack_1
+    21300050: player_attack_2
+    21300052: player_attack_3
+    21300054: player_attack_4
+    21300056: player_attack_5
+    21300058: player_attack_6
+    21300060: player_attack_7
+    21300062: player_attack_8
+    21300064: player_injury_1
+    21300066: player_injury_2
+    21300068: player_injury_3
+    21300070: player_injury_4
+    21300072: player_injury_5
+    21300074: player_injury_6
+    21300076: player_injury_7
+    21300078: player_injury_8
+    21300080: enemy_walk_1
+    21300082: enemy_melee_1
+    21300084: enemy_melee_2
+    21300086: enemy_melee_3
+    21300088: enemy_melee_4
+    21300090: enemy_melee_5
+    21300092: enemy_melee_6
+    21300094: enemy_melee_7
+    21300096: enemy_melee_8
+    21300098: enemy_injury_1
+    21300100: enemy_injury_2
     21300102: p_bullet
     21300104: e_bullet
+    21300106: enemy_walk_2
+    21300108: enemy_walk_3
+    21300110: enemy_walk_4
+    21300112: enemy_walk_5
+    21300114: enemy_walk_6
+    21300116: enemy_walk_7
+    21300118: enemy_walk_8
+    21300120: enemy_injury_3
+    21300122: enemy_injury_4
+    21300124: enemy_injury_5
+    21300126: enemy_injury_6
+    21300128: enemy_injury_7
+    21300130: enemy_injury_8
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -123,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: anim_spritesheet_0
+      name: player_idle_1
       rect:
         serializedVersion: 2
         x: 0
@@ -136,7 +149,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_1
+      name: player_idle_2
       rect:
         serializedVersion: 2
         x: 256
@@ -149,7 +162,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_2
+      name: player_idle_3
       rect:
         serializedVersion: 2
         x: 512
@@ -162,7 +175,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_3
+      name: player_idle_4
       rect:
         serializedVersion: 2
         x: 768
@@ -175,7 +188,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_4
+      name: player_idle_5
       rect:
         serializedVersion: 2
         x: 1024
@@ -188,7 +201,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_5
+      name: player_idle_6
       rect:
         serializedVersion: 2
         x: 1280
@@ -201,7 +214,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_6
+      name: player_idle_7
       rect:
         serializedVersion: 2
         x: 1536
@@ -214,7 +227,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_7
+      name: player_idle_8
       rect:
         serializedVersion: 2
         x: 1792
@@ -227,7 +240,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_8
+      name: player_jump_1
       rect:
         serializedVersion: 2
         x: 0
@@ -240,7 +253,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_9
+      name: player_jump_2
       rect:
         serializedVersion: 2
         x: 256
@@ -253,7 +266,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_10
+      name: player_jump_3
       rect:
         serializedVersion: 2
         x: 512
@@ -266,7 +279,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_11
+      name: player_jump_4
       rect:
         serializedVersion: 2
         x: 768
@@ -279,7 +292,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_12
+      name: player_jump_5
       rect:
         serializedVersion: 2
         x: 1024
@@ -292,7 +305,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_13
+      name: player_jump_6
       rect:
         serializedVersion: 2
         x: 1280
@@ -305,7 +318,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_14
+      name: player_jump_7
       rect:
         serializedVersion: 2
         x: 1536
@@ -318,7 +331,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_15
+      name: player_jump_8
       rect:
         serializedVersion: 2
         x: 1792
@@ -331,7 +344,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_16
+      name: player_walk_1
       rect:
         serializedVersion: 2
         x: 0
@@ -344,7 +357,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_17
+      name: player_walk_2
       rect:
         serializedVersion: 2
         x: 256
@@ -357,7 +370,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_18
+      name: player_walk_3
       rect:
         serializedVersion: 2
         x: 512
@@ -370,7 +383,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_19
+      name: player_walk_4
       rect:
         serializedVersion: 2
         x: 768
@@ -383,7 +396,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_20
+      name: player_walk_5
       rect:
         serializedVersion: 2
         x: 1024
@@ -396,7 +409,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_21
+      name: player_walk_6
       rect:
         serializedVersion: 2
         x: 1280
@@ -409,7 +422,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_22
+      name: player_walk_7
       rect:
         serializedVersion: 2
         x: 1536
@@ -422,7 +435,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_23
+      name: player_walk_8
       rect:
         serializedVersion: 2
         x: 1792
@@ -435,7 +448,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_24
+      name: player_attack_1
       rect:
         serializedVersion: 2
         x: 0
@@ -448,7 +461,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_25
+      name: player_attack_2
       rect:
         serializedVersion: 2
         x: 256
@@ -461,7 +474,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_26
+      name: player_attack_3
       rect:
         serializedVersion: 2
         x: 512
@@ -474,7 +487,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_27
+      name: player_attack_4
       rect:
         serializedVersion: 2
         x: 768
@@ -487,7 +500,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_28
+      name: player_attack_5
       rect:
         serializedVersion: 2
         x: 1024
@@ -500,7 +513,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_29
+      name: player_attack_6
       rect:
         serializedVersion: 2
         x: 1280
@@ -513,7 +526,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_30
+      name: player_attack_7
       rect:
         serializedVersion: 2
         x: 1536
@@ -526,7 +539,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_31
+      name: player_attack_8
       rect:
         serializedVersion: 2
         x: 1792
@@ -539,7 +552,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_32
+      name: player_injury_1
       rect:
         serializedVersion: 2
         x: 0
@@ -552,7 +565,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_33
+      name: player_injury_2
       rect:
         serializedVersion: 2
         x: 256
@@ -565,7 +578,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_34
+      name: player_injury_3
       rect:
         serializedVersion: 2
         x: 512
@@ -578,7 +591,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_35
+      name: player_injury_4
       rect:
         serializedVersion: 2
         x: 768
@@ -591,7 +604,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_36
+      name: player_injury_5
       rect:
         serializedVersion: 2
         x: 1024
@@ -604,7 +617,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_37
+      name: player_injury_6
       rect:
         serializedVersion: 2
         x: 1280
@@ -617,7 +630,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_38
+      name: player_injury_7
       rect:
         serializedVersion: 2
         x: 1536
@@ -630,7 +643,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_39
+      name: player_injury_8
       rect:
         serializedVersion: 2
         x: 1792
@@ -643,7 +656,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_40
+      name: enemy_walk_1
       rect:
         serializedVersion: 2
         x: 0
@@ -656,7 +669,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: enemy_idle_1
+      name: enemy_melee_1
       rect:
         serializedVersion: 2
         x: 0
@@ -669,11 +682,11 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_42
+      name: enemy_melee_2
       rect:
         serializedVersion: 2
         x: 253
-        y: 266
+        y: 254
         width: 256
         height: 256
       alignment: 0
@@ -682,11 +695,11 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_43
+      name: enemy_melee_3
       rect:
         serializedVersion: 2
-        x: 515
-        y: 269
+        x: 512
+        y: 257
         width: 256
         height: 256
       alignment: 0
@@ -695,11 +708,11 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_44
+      name: enemy_melee_4
       rect:
         serializedVersion: 2
         x: 765
-        y: 263
+        y: 254
         width: 256
         height: 256
       alignment: 0
@@ -708,11 +721,11 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_45
+      name: enemy_melee_5
       rect:
         serializedVersion: 2
         x: 1024
-        y: 269
+        y: 251
         width: 256
         height: 256
       alignment: 0
@@ -721,11 +734,11 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_46
+      name: enemy_melee_6
       rect:
         serializedVersion: 2
         x: 1277
-        y: 266
+        y: 251
         width: 256
         height: 256
       alignment: 0
@@ -734,11 +747,11 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_47
+      name: enemy_melee_7
       rect:
         serializedVersion: 2
         x: 1533
-        y: 263
+        y: 254
         width: 256
         height: 256
       alignment: 0
@@ -747,7 +760,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_48
+      name: enemy_melee_8
       rect:
         serializedVersion: 2
         x: 1792
@@ -760,7 +773,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_49
+      name: enemy_injury_1
       rect:
         serializedVersion: 2
         x: 0
@@ -773,7 +786,7 @@ TextureImporter:
       outline: []
       tessellationDetail: -1
     - serializedVersion: 2
-      name: anim_spritesheet_50
+      name: enemy_injury_2
       rect:
         serializedVersion: 2
         x: 253
@@ -811,6 +824,175 @@ TextureImporter:
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: -1
+    - serializedVersion: 2
+      name: enemy_walk_2
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 510
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_walk_3
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 510
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_walk_4
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 507
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_walk_5
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 504
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_walk_6
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 504
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_walk_7
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 507
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_walk_8
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 507
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_injury_3
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_injury_4
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_injury_5
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_injury_6
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_injury_7
+      rect:
+        serializedVersion: 2
+        x: 1538
+        y: 3
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: enemy_injury_8
+      rect:
+        serializedVersion: 2
+        x: 1790
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
