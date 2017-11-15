@@ -26,12 +26,14 @@ public class TitleScript : MonoBehaviour
 
 		const int buttonWidth = 120;
 		const int buttonHeight = 60;
-		
-		// Determine the button's place on screen
-		// Center in X, 2/3 of the height in Y
+
+        // Determine the next button's place on screen
+        // Change these X and Y variables to place the button where you want!
+        float buttonX = Screen.width / 2 - (buttonWidth / 2);
+        float buttonY = (Screen.height) - (buttonHeight * 4);
 		Rect buttonRect1 = new Rect(
-			Screen.width / 2 - (buttonWidth / 2),
-			(Screen.height) - (buttonHeight * 4),
+			buttonX,
+			buttonY,
 			buttonWidth,
 			buttonHeight
 			);
@@ -45,9 +47,14 @@ public class TitleScript : MonoBehaviour
 		}
 
 		GUI.skin = exitBtn;
+
+        // Determine the exit button's place on screen
+        // Change these X and Y variables to place the button where you want!
+        float button2X = Screen.width / 2 - (buttonWidth / 2);
+        float button2Y = (Screen.height) - (buttonHeight * 2);
 		Rect buttonRect2 = new Rect(
-			Screen.width / 2 - (buttonWidth / 2),
-			(Screen.height) - (buttonHeight * 2),
+			button2X,
+			button2Y,
 			buttonWidth,
 			buttonHeight
 			);
