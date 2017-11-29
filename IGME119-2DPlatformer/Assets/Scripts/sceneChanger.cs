@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 
-public class sceneChanger : MonoBehaviour {
+public class SceneChanger : MonoBehaviour {
 	
 	public List<GameObject> Scenes = new List<GameObject>();
 	public int currentScene;
