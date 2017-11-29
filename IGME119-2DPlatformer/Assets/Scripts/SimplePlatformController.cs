@@ -35,7 +35,7 @@ public class SimplePlatformController : MonoBehaviour
     {
         grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
 
-		if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
+        if (Input.GetButtonDown("Vertical") && grounded)
         {
             jump = true;
 			anim.SetBool("Jump", true);
