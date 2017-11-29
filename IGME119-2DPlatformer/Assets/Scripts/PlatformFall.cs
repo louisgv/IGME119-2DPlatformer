@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlatformFall : MonoBehaviour {
 
     public float fallDelay = 1000f;
+    public bool shouldFall = false;
 
     private Rigidbody2D rb2d;
 
@@ -20,7 +21,7 @@ public class PlatformFall : MonoBehaviour {
 
     void OnCollisionEnter2D (Collision2D other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (shouldFall && other.gameObject.CompareTag("Player"))
             Invoke("Fall", fallDelay);
     }
 

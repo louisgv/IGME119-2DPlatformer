@@ -10,6 +10,8 @@ public class SimplePlatformController : MonoBehaviour
 	public float maxSpeed = 5f;
 	public float jumpForce = 0;
 	public bool shouldFlip = false;
+    public bool cameraFollow = false;
+
 	public AudioSource source;
 	public AudioClip audio_Shot;
     public Transform groundCheck;
@@ -84,6 +86,10 @@ public class SimplePlatformController : MonoBehaviour
 			transform.position.z
 		);
 
+        if (cameraFollow)
+        {
+            Camera.main.transform.position = new Vector3(transform.position.x, Camera.main.transform.position.y, Camera.main.transform.position.z);
+        }
     }
 
     void FixedUpdate()
