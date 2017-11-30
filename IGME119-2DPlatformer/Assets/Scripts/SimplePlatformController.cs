@@ -11,6 +11,7 @@ public class SimplePlatformController : MonoBehaviour
 	public float jumpForce = 0;
 	public bool shouldFlip = false;
     public bool cameraFollow = false;
+    public GameObject gameOverCanvas;
 
 	public AudioSource source;
 	public AudioClip audio_Shot;
@@ -25,6 +26,7 @@ public class SimplePlatformController : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
+        gameOverCanvas.SetActive(false);
         anim = GetComponentInChildren<Animator>();
 		anim.enabled = true;
         rb2d = GetComponent<Rigidbody2D>();
@@ -149,9 +151,8 @@ public class SimplePlatformController : MonoBehaviour
 	void OnDestroy()
 	{
 		// Game Over.
-		// Add the script to the parent because the current game
-		// object is likely going to be destroyed immediately.
-		transform.parent.gameObject.AddComponent<GameOverScript>();
+		// Show the Game Over Buttons
+        gameOverCanvas.SetActive(true);
 	}
 
 }
