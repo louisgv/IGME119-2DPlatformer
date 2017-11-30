@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour {
 
-    public int maxPlatformsOnScreen = 20;
     public GameObject platform;
 	public GameObject enemy;
 	public GameObject enemyLayer;
