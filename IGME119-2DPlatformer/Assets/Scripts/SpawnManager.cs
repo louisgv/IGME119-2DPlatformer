@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour {
 
-    public int maxPlatforms = 20;
+    public int maxPlatformsOnScreen = 20;
     public GameObject platform;
 	public GameObject enemy;
 	public GameObject enemyLayer;
 	public GameObject groundLayer;
 	public GameObject player;
+    private GameObject lastPlatform;
 
 	/// <summary>
 	/// How high above the platform to spawn enemies.
@@ -81,11 +82,13 @@ public class SpawnManager : MonoBehaviour {
 	void Start () {
 
         originPosition = transform.position;
+        lastPlatform = null;
         Spawn();
 
 	}
 
 	void Update () {
+        Spawn();
 	}
 
 	/// <summary>
@@ -93,11 +96,12 @@ public class SpawnManager : MonoBehaviour {
 	/// </summary>
     void Spawn()
     {
-
-		//Iteratively spawn platfors, each being placed relative to the last.
+        //Iteratively spawn platfors, each being placed relative to the last.
+        if(lastPlatform != null) {
+            originPosition = lastPlatform.transform.position;
+        }
 		if (shouldSpawnPlatforms) {
-			for (int i = 0; i < maxPlatforms; i++) {
-
+            while (lastPlatform == null || Camera.main.WorldToScreenPoint(originPosition).x < Camera.main.pixelWidth) {
 				//Spawn the platform
 				Vector2 randomPosition = originPosition +
 				                                 new Vector2 (
@@ -105,8 +109,9 @@ public class SpawnManager : MonoBehaviour {
 					                                 Random.Range (verticalMin, verticalMax));
 
 				randomPosition = CameraClamp (randomPosition, offset);
-				Instantiate (platform, randomPosition, Quaternion.identity, groundLayer.transform);
-				originPosition = randomPosition;
+                GameObject newPlatform = Instantiate (platform, randomPosition, Quaternion.identity, groundLayer.transform);
+                lastPlatform = newPlatform;
+                originPosition = randomPosition;
 
 				//Optionally spawn enemy on platform
 				if (shouldSpawnEnemies) {
