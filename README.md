@@ -13,6 +13,7 @@
   7. Platform Falling
   8. Menu Button Placement
   9. Player-centered Camera*
+  10. Infinite Ground
 
 ## Contributions / Issues
   If you notice anything about the game that seems broken, or can think about any other way to better this game, please feel free to open an issue on Github. You can find instructions on how to do this [here](https://help.github.com/articles/creating-an-issue/). Think you could fix the issue yourself, or want to add a feature you think future players will want? Your help is welcome and wanted! Simply [fork](https://help.github.com/articles/fork-a-repo/) this repository, and submit a [pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) once you've updated your fork. We'll look through your update and if it looks good, we'll make it a part of the game!
@@ -79,3 +80,10 @@
   2. In the Inspector, scroll down to the Component titled *Simple Platform Controller*, and check the checkbox next to the words *Camera Follow*
   3. The Camera will now follow the player. If you want to disable this feature, simply uncheck the same checkbox.
   4. *NOTE: This feature is currently in development. there are known issues with the parallax layers relating to this mode that are currently being worked on.
+
+## Infinite Ground
+  Want to spawn an infinite ground at the bottom of the screen? You can do that!
+  1. Open the *Platformer_Float* scene in the *Scenes* folder.
+  2. In the Hierarchy, click on the object named *DynamicGroundSpawnManager*
+  3. In the inspector, scroll down to the Script Component titled *Spawn Manager*, and check the checkbox next to *Should Spawn Platforms*
+  4. The ground will now dynamically spawn automatically. Want to turn this back off? Just uncheck the same checkbox!
