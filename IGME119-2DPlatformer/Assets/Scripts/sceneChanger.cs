@@ -55,7 +55,6 @@ public class SceneChanger : MonoBehaviour {
 		{
 			return false;
 		}
-		return false;
 	}
 }
 
