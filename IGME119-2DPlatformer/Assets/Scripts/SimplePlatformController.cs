@@ -36,11 +36,12 @@ public class SimplePlatformController : MonoBehaviour
     void Update()
     {
         grounded = Physics2D.Linecast(transform.position, groundCheck.position, 1 << LayerMask.NameToLayer("Ground"));
+        anim.SetBool("Grounded", grounded);
 
         if (Input.GetButtonDown("Vertical") && grounded)
         {
             jump = true;
-			anim.SetBool("Jump", true);
+            anim.SetTrigger("Jump");
         }
 
 		// 5 - Shooting
@@ -58,7 +59,7 @@ public class SimplePlatformController : MonoBehaviour
 			{
 				// false because the player is not an enemy
 				weapon.Attack(false);
-				anim.SetBool("Shoot", true);
+                anim.SetTrigger("Shoot");
 
 			}
 		}

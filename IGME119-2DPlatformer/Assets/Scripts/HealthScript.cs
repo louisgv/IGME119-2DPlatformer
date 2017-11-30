@@ -25,7 +25,7 @@ public class HealthScript : MonoBehaviour {
 	{
 		hp -= damageCount;
 		anim = gameObject.GetComponentInChildren<Animator> ();
-		anim.SetBool ("Injury", true);
+        anim.SetTrigger ("Injury");
 		
 		if (hp <= 0)
 		{
