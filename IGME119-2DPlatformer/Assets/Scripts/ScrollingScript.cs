@@ -8,17 +8,18 @@ using UnityEngine;
 public class ScrollingScript : MonoBehaviour
 {
     /// <summary>
-    /// Scrolling speed
+    /// Player Based Scrolling speed - how far this unit should move
+    /// for each unit the player moves
     /// </summary>
     public Vector2 playerBasedSpeed = new Vector2(10, 10);
 
     /// <summary>
-    /// Scrolling speed
+    /// Automatic Scrolling Speed - when not based on player
     /// </summary>
     public Vector2 automaticBasedSpeed = new Vector2(10, 10);
 	
 	/// <summary>
-	/// Moving direction
+	/// How this object should move relative to the speed it is given
 	/// </summary>
 	public Vector2 direction = new Vector2(-1, 0);
 
@@ -29,19 +30,31 @@ public class ScrollingScript : MonoBehaviour
     /// </summary>
     public bool playerBasedMovement = false;
 
+    /// <summary>
+    /// The player's position last frame.
+    /// </summary>
     public Vector2 playerPrevPosition;
+
+    /// <summary>
+    /// The player.
+    /// </summary>
     public GameObject player;
 
 	
-	// 3 - Get all the children
 	void Start()
 	{
+
+        // Get initial position of player
         playerPrevPosition = player.transform.position;
 	}
 
     void Update()
     {
+        //Where we will move this frame
         Vector3 movement;
+
+        // If we're moving based on player, 
+        // see how player moved and move accordingly
         if (playerBasedMovement)
         {
             Vector2 playerCurrPosition = player.transform.position;
@@ -52,6 +65,9 @@ public class ScrollingScript : MonoBehaviour
                 playerBasedSpeed.y * direction.y * positionChange.y,
               0);
         }
+
+        // Otherwise, if we're moving automatically, just move based on our 
+        // automaticBasedSpeed and Time.DeltaTime
         else
         {
             // Movement
@@ -63,6 +79,7 @@ public class ScrollingScript : MonoBehaviour
             movement *= Time.deltaTime;
         }
 
+        // Move and update playerPrevPosition
         transform.Translate(movement);
         playerPrevPosition = player.transform.position;
 
