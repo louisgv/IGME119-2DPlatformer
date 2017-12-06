@@ -1,6 +1,7 @@
 fileFormatVersion: 2
-guid: 2eb8ac83f0177a14faed569768f9946b
-timeCreated: 1455834848
+guid: b4cb421da12c044d983c6aa9b1b70d88
+timeCreated: 1512497275
+licenseType: Free
 VideoClipImporter:
   serializedVersion: 2
   useLegacyImporter: 0
@@ -23,16 +24,7 @@ VideoClipImporter:
   importAudio: 0
   sourceAudioChannelCount: 
   sourceAudioSampleRate: 
-  targetSettings:
-    0:
-      enableTranscoding: 0
-      codec: 0
-      resizeFormat: 0
-      aspectRatio: 0
-      customWidth: -1
-      customHeight: -1
-      bitrateMode: 2
-      spatialQuality: 2
+  targetSettings: {}
   output:
     format: 0
     settings:
@@ -40,8 +32,8 @@ VideoClipImporter:
       codec: 0
       resizeFormat: 0
       aspectRatio: 0
-      customWidth: -1
-      customHeight: -1
+      customWidth: 1024
+      customHeight: 768
       bitrateMode: 2
       spatialQuality: 2
     encodedWidth: 1024

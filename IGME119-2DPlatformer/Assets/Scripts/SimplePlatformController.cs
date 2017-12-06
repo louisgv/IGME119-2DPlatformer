@@ -91,7 +91,7 @@ public class SimplePlatformController : MonoBehaviour
 
         if (cameraFollow)
         {
-            Camera.main.transform.position = new Vector3(transform.position.x, Camera.main.transform.position.y, Camera.main.transform.position.z);
+            Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
         }
     }
 
