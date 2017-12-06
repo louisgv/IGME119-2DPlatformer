@@ -12,8 +12,9 @@
   6. Automatic Platform Spawning
   7. Platform Falling
   8. Menu Button Placement
-  9. Player-centered Camera*
-  10. Infinite Ground
+  9. Player-centered Camera
+  10. Player-Based Parallax
+  11. Infinite Ground
 
 ## Contributions / Issues
   If you notice anything about the game that seems broken, or can think about any other way to better this game, please feel free to open an issue on Github. You can find instructions on how to do this [here](https://help.github.com/articles/creating-an-issue/). Think you could fix the issue yourself, or want to add a feature you think future players will want? Your help is welcome and wanted! Simply [fork](https://help.github.com/articles/fork-a-repo/) this repository, and submit a [pull request](https://help.github.com/articles/creating-a-pull-request-from-a-fork/) once you've updated your fork. We'll look through your update and if it looks good, we'll make it a part of the game!
@@ -74,12 +75,21 @@
     * At the top of the inspector, check the checkbox to the left of the word *Canvas*
     * When done moving your button, be sure to uncheck this checkbox so the buttons are hidden until death.
 
-## Player-centered Camera*
+## Player-centered Camera
   Want a more classic Platformer, where the camera follows the player? You can do that!
   1. Follow steps 1-4 in the __Jump Height__ section
   2. In the Inspector, scroll down to the Component titled *Simple Platform Controller*, and check the checkbox next to the words *Camera Follow*
   3. The Camera will now follow the player. If you want to disable this feature, simply uncheck the same checkbox.
-  4. *NOTE: This feature is currently in development. there are known issues with the parallax layers relating to this mode that are currently being worked on.
+  4. Want the parallax to correspond to the player and not automatically scroll? Follow the instructions in __Player-Based Parallax__
+
+## Player-Based Parallax
+  Want the Parallax to respond to the motion of the player instead of scrolling automatically with time? You can do that!
+  1. Open the *Platformer_Float* scene in the *Scenes* folder.
+  2. In the Hierarchy, click the arrow next to the object named *Layer* to see its children.
+  3. In the Hierarchy, click on each Layer object, one at a time (0, 1, 2, 3, 5)
+  4. For each Layer, in the Inspector, scroll down to the Component titled *ScrollingScript*, and check the checkbox next to the words *Player Based Movement*
+  5. The Parallax will now move based on how the player moves and the *Player Based Speed* parameter
+  6. Want to undo this? Simply uncheck the same checkbox to return to Automatic Based Movement
 
 ## Infinite Ground
   Want to spawn an infinite ground at the bottom of the screen? You can do that!
