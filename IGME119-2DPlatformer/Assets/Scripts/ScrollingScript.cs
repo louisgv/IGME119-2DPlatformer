@@ -55,7 +55,8 @@ public class ScrollingScript : MonoBehaviour
 
         // If we're moving based on player, 
         // see how player moved and move accordingly
-        if (playerBasedMovement)
+        // If player is dead don't even both
+        if (playerBasedMovement && player != null)
         {
             Vector2 playerCurrPosition = player.transform.position;
             Vector2 positionChange = playerCurrPosition - playerPrevPosition;
@@ -81,7 +82,10 @@ public class ScrollingScript : MonoBehaviour
 
         // Move and update playerPrevPosition
         transform.Translate(movement);
-        playerPrevPosition = player.transform.position;
+        if (player != null)
+        {
+            playerPrevPosition = player.transform.position;
+        }
 
 
     }
