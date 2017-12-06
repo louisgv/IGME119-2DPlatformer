@@ -9,8 +9,9 @@ public class SimplePlatformController : MonoBehaviour
     public float moveForce = 365f;
 	public float maxSpeed = 5f;
 	public float jumpForce = 0;
-	public bool shouldFlip = false;
-    public bool cameraFollow = false;
+    public bool shouldFlip = false;
+    public bool cameraFollowX = true;
+    public bool cameraFollowY = false;
     public GameObject gameOverCanvas;
 
 	public AudioSource source;
@@ -89,10 +90,10 @@ public class SimplePlatformController : MonoBehaviour
 			transform.position.z
 		);
 
-        if (cameraFollow)
-        {
-            Camera.main.transform.position = new Vector3(transform.position.x, transform.position.y, Camera.main.transform.position.z);
-        }
+        float xPos = cameraFollowX ? transform.position.x : Camera.main.transform.position.x;
+        float yPos = cameraFollowY ? transform.position.y : Camera.main.transform.position.y;
+        Camera.main.transform.position = new Vector3(xPos, yPos, Camera.main.transform.position.z);
+
     }
 
     void FixedUpdate()

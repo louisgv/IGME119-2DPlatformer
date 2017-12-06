@@ -82,6 +82,8 @@ public class ScrollingScript : MonoBehaviour
 
         // Move and update playerPrevPosition
         transform.Translate(movement);
+        Camera.main.transform.Translate(movement);
+
         if (player != null)
         {
             playerPrevPosition = player.transform.position;
