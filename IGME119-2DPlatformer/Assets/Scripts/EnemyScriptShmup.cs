@@ -59,7 +59,7 @@ public class EnemyScriptShmup : MonoBehaviour
 				{
 					source.PlayOneShot(audio_Shot);
 					weapon.Attack(true);
-					gameObject.GetComponent<Animator>().SetBool("Shoot",true);
+                    gameObject.GetComponent<Animator>().SetTrigger("Shoot");
 				}
 			}
 			
@@ -90,6 +90,6 @@ public class EnemyScriptShmup : MonoBehaviour
 
 	private void endLoop()
 	{
-		gameObject.GetComponent<Animator>().SetBool("Shoot",false);
+        gameObject.GetComponent<Animator>().SetTrigger("Shoot");
 	}
 }

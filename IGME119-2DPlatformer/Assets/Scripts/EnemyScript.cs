@@ -20,15 +20,16 @@ public class EnemyScript : MonoBehaviour {
     private bool grounded = false;
 	private bool leftGrounded = false;
 	private bool rightGrounded = false;
+    private bool shotLastFrame = false;
 
     private Animator anim;
     private Rigidbody2D rb2d;
 
     // Use this for initialization
     void Start () {
-		weapon = this.GetComponent<WeaponScript> ();
+        weapon = this.GetComponentInChildren<WeaponScript> ();
 		weapon.enabled = true;
-        anim = GetComponent<Animator>();
+        anim = gameObject.GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
     }
 	
@@ -39,18 +40,14 @@ public class EnemyScript : MonoBehaviour {
 		rightGrounded = Physics2D.Linecast(transform.position, groundCheckRight.position, 1 << LayerMask.NameToLayer("Ground"));
 
 
-//		if (player.position.y > rb2d.transform.position.y + 1f && !jump && grounded)
-//        {
-//            jump = true;
-//        }  
-
 		// Auto-Fire
-		if (weapon != null && weapon.enabled && weapon.CanAttack)
+        if (weapon != null && weapon.enabled && weapon.CanAttack && !anim.GetCurrentAnimatorStateInfo(0).IsName("Player_Shoot"))
 		{
-			//source.PlayOneShot(audio_Shot);
-			weapon.Attack(true);
-			gameObject.GetComponent<Animator>().SetBool("Shoot",true);
-		}
+            //source.PlayOneShot(audio_Shot);
+            Debug.Log(weapon + "Fire");
+            weapon.Attack(true);
+            gameObject.GetComponent<Animator>().SetTrigger("Shoot");
+        }
 
 //		// 4 - Out of the camera ? Destroy the game object.
 //		if (GetComponent<Renderer>().IsVisibleFrom(Camera.main) == false)
@@ -61,10 +58,10 @@ public class EnemyScript : MonoBehaviour {
 		if (player != null) {
 			if (player.position.x < gameObject.transform.position.x && leftGrounded) {
 				gameObject.transform.Translate (maxSpeed * Time.deltaTime * -1f, 0, 0);
-				anim.SetBool ("Moving", true);
+                gameObject.GetComponent<Animator>().SetBool ("Moving", true);
 			} else if (player.position.x > gameObject.transform.position.x && rightGrounded) {
 				gameObject.transform.Translate (maxSpeed * Time.deltaTime, 0, 0);
-				anim.SetBool ("Moving", true);
+                gameObject.GetComponent<Animator>().SetBool ("Moving", true);
 			}
 		}
     }
@@ -98,17 +95,17 @@ public class EnemyScript : MonoBehaviour {
 
 	private void endShoot()
 	{
-		anim.SetBool("Shoot",false);
+		//anim.SetBool("Shoot",false);
 	}
 
 	private void endWalk()
 	{
-		anim.SetBool("Moving",false);
+        //gameObject.GetComponent<Animator>().SetBool("Moving",false);
 	}
 
 	private void endInjury()
 	{
-		anim.SetBool("Injury",false);
+		//anim.SetBool("Injury",false);
 	}
 
 }
